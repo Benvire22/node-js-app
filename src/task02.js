@@ -3,7 +3,7 @@ const app = express();
 const port = 8002;
 
 const vigenere = require('caesar-salad').Vigenere;
-const password = 'HelloWorld2024!';
+const password = 'password';
 
 const encodeText = (text) => vigenere.Cipher(password).crypt(text);
 const decodeText = (text) => vigenere.Decipher(password).crypt(text);
